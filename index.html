@@ -537,13 +537,24 @@
   </div>
   <div class="modal-checkbox">
     <input
-    class="modal-checkbox-input"
+    class="modal-checkbox-input visually-hidden"
     id="privacy-policy"
     name="privacy-policy"
     type="checkbox"
     value="true"
     required>
-    <label class="modal-checkbox-label" for="privacy-policy">I accept the terms and conditions of the Privacy Policy</label>
+    <label
+    class="modal-checkbox-label"
+    for="privacy-policy">
+    <span class="modal-checkbox-span">
+      <svg class="modal-checkbox-icon"
+      width="10"
+      height="8">
+      <use href="./images/icons.svg#icon-vector"></use>
+    </svg>
+    </span>
+    I accept the terms and conditions of the
+      <a class="modal-checkbox-label-color" href="">Privacy Policy</a></label>
   </div>
   <button class="modal-btn" type="submit">send</button>
 </form>
